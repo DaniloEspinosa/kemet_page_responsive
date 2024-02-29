@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+            color: white;
+        }
+
+        @media (width <= 300px) {
+            div {
+                width: 180px;
+                background-color: black;
+            }
+        }
+
+        /* @media (max-width: 350px) and (min-width: 301px)  Esta es la antigua manera de hacerlo*/
+        @media (301px <= width <= 350px) {
+            div {
+                width: 300px;
+                background-color: red;
+                text-align: center;
+            }
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">Estoy en el div</div>
+</body>
+
+</html>
